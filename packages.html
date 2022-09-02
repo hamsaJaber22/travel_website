@@ -8,11 +8,13 @@
         <!-- bootstap  -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- font awesome -->
-        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assetfs/css/all.min.css">
         <!-- style  -->
-        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <!-- media query -->
-        <link rel="stylesheet" href="assets/css/media_query.min.css">
+        <link rel="stylesheet" href="assets/css/media_query.css">
+        
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -22,8 +24,8 @@
       <!-- start navbar -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light">
           <div class="container">
-             <a href="index.html">
-                <img alt="logo_Img" width="136" src="img/logo.png"/>
+             <a class="logo" href="index.html">
+                <img alt="logo_Img" width="136" src="img/around logo.png"/>
              </a>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,18 +58,61 @@
                           <a class="nav-link" href="contact.html">contact us</a>
                       </li>
                    </ul>
+
+                                <!--change language -->
+                  <div class="change_language">
+                     <ul class="dropdown px-0 my-0">
+                        <li class="nav-item me-3 me-lg-0 dropdown d-flex" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle hidden-arrow border-1" href="#" id="new-mdb-language-switch" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="eflag position-relative active"></i>
+                          </a>
+                        </li>
+                        <ul class="dropdown-menu dropdown-menu-end py-0 " aria-labelledby="new-mdb-language-switch" data-popper-placement="null" data-mdb-popper="none">
+                          <li>
+                             <a class="dropdown-item py-0" href="#">
+                                <i class="eflag"></i>English  
+                                <i class="fa fa-check text-success ms-2 "></i>
+                             </a>
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li>
+                             <a class="dropdown-item language-select-option py-0" href="#" data-lang="cn">
+                                <i class="flag-palestine aflag"></i>Arabic        
+                             </a>
+                         </li>
+                       </ul> 
+                     </ul>
+                 </div>
+            <!-- end change language -->
+
+                        
+<!-- register & sign -->
+      <div class="navbar__sign">
+         <a href="#" class="nav_sign_btn loginBtn text-white ">Login</a>
+         <a href="#" class="nav_sign_btn transparent registerBtn text-white">Signup</a>
+         <div class="list">
+           <!-- <nav class=" navbar-expand-lg"> -->
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                 </button>
+         </div>
+   </div>
+
              </div>
+             
           </div>
         </nav>
         <!-- end navbar --> 
         <section class="header">
-          <h1 class="contact_title text-center">our packages</h1>
-          <div class="to_home">
-               <a href="index.html"><h6>home</h6></a> 
-               <i class="fas fa-angle-right"></i>
-               <h6>packages</h6> 
+         <div class="h_overlay">
+           <h1 class="contact_title text-center">our packages</h1>
+           <div class="to_home">
+                <a href="index.php"><h6>home</h6></a>
+                <i class="fas fa-angle-right"></i>
+                <h6>packages</h6>
+          </div>
          </div>
-        </section>
+         </section>
   </header>
       <!-- end header -->
 
@@ -82,7 +127,7 @@
           <div class="col-lg-4 col-sm-12">
               <div class="your_destination">
                   <div class="your_destination_header">
-                      <h4>select your destination :</h4>
+                      <h4 class="text-center py-3 m-0">select your destination :</h4>
                   </div>
                   <div class="your_destination_content">
                     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
@@ -136,7 +181,7 @@
                                   </a>
                                 </div>
                                 <div class="price">1000 $</div>
-                                <a class="details" href="#">details</a>
+                                <a class="details" href="#">Booking</a>
                              </div>
                           </div>
                           <img src="img/package-berlin.jpg" class="card-img-top" alt="berlin_Img" />
@@ -159,7 +204,7 @@
                                    </a>
                                </div>
                                <div class="price">800 $</div>
-                               <a class="details" href="#">details</a>
+                               <a class="details" href="#">Booking</a>
                            </div>
                          </div>
                          <img src="img/package-newdelhi.jpg" class="card-img-top" alt="newdelhi_Img" />
@@ -182,7 +227,7 @@
                                      </a>
                                   </div>
                                   <div class="price">1200 $</div>
-                                  <a class="details" href="#">details</a>
+                                  <a class="details" href="#">Booking</a>
                                </div>
                            </div>
                            <img src="img/package-london.jpg" class="card-img-top" alt="london_Img" />
@@ -205,7 +250,7 @@
                                     </a>
                                  </div>
                                  <div class="price">1000 $</div>
-                                 <a class="details" href="#">details</a>
+                                 <a class="details" href="#">Booking</a>
                               </div>
                           </div>
                           <img src="img/package-cuba.jpg" class="card-img-top" alt="cuba_Img">
@@ -278,6 +323,22 @@
 </section>
 <!-- end about content -->
 
+<!-- start background_overlay  -->
+<section class="background_overlay mt-5">
+   <div class="container bg-gray py-5 ">
+       <div class="background_overlay_text">   
+            <h2>Its a big world out there</h2>
+            <h2>preper yourself & let us explore the beauty of the world</h2>
+            <p>We Have Many Specials Offers Especially For You.</p>
+            <div class="get_started">
+                <a class="butn letter_Spacing" href="#">Get Started</a>
+            </div>
+       </div>
+   </div>
+ </section> 
+ <!-- end background_overlay -->
+
+
 <!-- start footer -->
 <footer>
   <section class="footer_top">
@@ -304,13 +365,11 @@
             <div class="footer_top_section col-xl">
               <h5>Newsletter</h5>
               <h6>sign up fqr special offers</h6>
-              <div class="footer_form">
+              <div class="footer_form position-relative">
                   <div class="footer_email_form">
                       <input type="email" name="email-form" class="form-control" id="exampleInputEmail1" placeholder="Email">
                   </div>
-                  <div class="text-center">
-                      <button type="submit" value="SEND NOW" class="btn">subscribe</button>
-                  </div> 
+                  <button type="submit" value="SEND NOW" class="butn py-1 px-2 position-absolute " style="top:0; right:0;">subscribe</button>
               </div>
             </div>
           </div>
