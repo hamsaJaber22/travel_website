@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Love Travel</title>
         <!-- bootstap  -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- font awwsome -->
         <link rel="stylesheet" href="assets/css/all.min.css">
         <!-- style  -->
-        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <!-- media query -->
         <link rel="stylesheet" href="assets/css/media_query.css">
+
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
@@ -21,13 +23,13 @@
       <!-- start navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light">
           <div class="container">
-             <a href="index.html">
-                <img alt="logo_Img" width="136" src="img/logo.png"/>
+             <a class="logo" href="index.html">
+                <img alt="logo_Img" width="136" src="img/around logo.png"/>
              </a>
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
              </button>
-             <div class="collapse position-relative navbar-collapse" id="navbarNavAltMarkup">
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                    <ul class="navbar-nav">
                       <li class="nav-item">
                          <a class="nav-link" aria-current="page" href="index.html">Home</a>
@@ -55,7 +57,48 @@
                           <a class="nav-link" href="contact.html">contact us</a>
                       </li>
                    </ul>
+     
+             <!--change language -->
+                  <div class="change_language">
+                     <ul class="dropdown px-0 my-0">
+                        <li class="nav-item me-3 me-lg-0 dropdown d-flex" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle hidden-arrow border-1" href="#" id="new-mdb-language-switch" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="eflag position-relative active"></i>
+                          </a>
+                        </li>
+                        <ul class="dropdown-menu dropdown-menu-end py-0 " aria-labelledby="new-mdb-language-switch" data-popper-placement="null" data-mdb-popper="none">
+                          <li>
+                             <a class="dropdown-item py-0" href="#">
+                                <i class="eflag"></i>English  
+                                <i class="fa fa-check text-success ms-2 "></i>
+                             </a>
+                          </li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li>
+                             <a class="dropdown-item language-select-option py-0" href="#" data-lang="cn">
+                                <i class="flag-palestine aflag"></i>Arabic        
+                             </a>
+                         </li>
+                       </ul> 
+                     </ul>
+                 </div>
+            <!-- end change language -->
+            
+            
+<!-- register & sign -->
+      <div class="navbar__sign">
+            <a href="#" class="nav_sign_btn loginBtn text-white ">Login</a>
+            <a href="#" class="nav_sign_btn transparent registerBtn text-white">Signup</a>
+            <div class="list">
+              <!-- <nav class=" navbar-expand-lg"> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                    </button>
+            </div>
+      </div>
+
              </div>
+
           </div>
     </nav>
         <!-- end navbar --> 
@@ -106,7 +149,8 @@
                        </div>
 
                        <div class="advaanced_content_item col-lg-3">
-                     <button type="submit" value="SEND NOW" class="btn w-100">search</button>
+                     <button type="submit" value="SEND NOW" class="butn w-100 h-25 d-flex align-items-center justify-content-center">search</button>
+
                        </div>
                    </div>
                  </div>
@@ -165,7 +209,7 @@
                          </select>
                      </div>
                       <div class="advaanced_content_item col-lg-6 ">
-                         <button type="submit" value="SEND NOW" class="btn w-100">search</button>
+                         <button type="submit" value="SEND NOW" class="butn w-100 h-50 d-flex align-items-center justify-content-center">search</button>
                       </div>
                    </div>
                 </div>
@@ -175,8 +219,8 @@
        </div>
 
        <div class="headerImg">
-         <img class="mySlides" src="img/p-17.jpg" alt="header photo">
-         <img class="mySlides" src="img/parallax-2.jpg" alt="header photo">
+         <img class="mySlides" src="img/czech republic.png" alt="header photo">
+         <img class="mySlides" src="img/shutterstock_1293922393.jpg" alt="header photo">
          <div class="slid-L" onclick="plusDivs(-1)">
              <i id="prev" class="fas fa-chevron-left"></i>
          </div>
@@ -212,7 +256,7 @@
                                </a>
                              </div>
                              <div class="price">1000 $</div>
-                             <a class="details" href="#">details</a>
+                             <a class="details" href="#">Booking</a>
                           </div>
                        </div>
                        <img src="img/package-berlin.jpg" class="card-img-top" alt="berlin_Img" />
@@ -236,7 +280,7 @@
                                 </a>
                             </div>
                             <div class="price">800 $</div>
-                            <a class="details" href="#">details</a>
+                            <a class="details" href="#">Booking</a>
                         </div>
                       </div>
                       <img src="img/package-newdelhi.jpg" class="card-img-top" alt="newdelhi_Img" />
@@ -259,7 +303,7 @@
                                   </a>
                                </div>
                                <div class="price">1200 $</div>
-                               <a class="details" href="#">details</a>
+                               <a class="details" href="#">Booking</a>
                             </div>
                         </div>
                         <img src="img/package-london.jpg" class="card-img-top" alt="london_Img" />
@@ -282,7 +326,7 @@
                                  </a>
                               </div>
                               <div class="price">1000 $</div>
-                              <a class="details" href="#">details</a>
+                              <a class="details" href="#">Booking</a>
                            </div>
                        </div>
                        <img src="img/package-cuba.jpg" class="card-img-top" alt="cuba_Img">
@@ -305,7 +349,7 @@
                                 </a>
                              </div>
                              <div class="price">1000 $</div>
-                             <a class="details" href="#">details</a>
+                             <a class="details" href="#">Booking</a>
                           </div>
                        </div>
                        <img src="img/package-rome.jpg" class="card-img-top" alt="cuba_Img">
@@ -328,7 +372,7 @@
                                  </a>
                               </div>
                               <div class="price">1000 $</div>
-                              <a class="details" href="#">details</a>
+                              <a class="details" href="#">Booking</a>
                            </div>
                         </div>
                         <img src="img/package-dubai.jpg" class="card-img-top" alt="cuba_Img">
@@ -548,6 +592,132 @@
 </section> 
 <!-- end gallery -->
 
+<!-- start background_overlay  -->
+<section class="background_overlay mt-5">
+   <div class="container bg-gray py-5 ">
+       <div class="background_overlay_text">   
+            <h2>Its a big world out there</h2>
+            <h2>preper yourself & let us explore the beauty of the world</h2>
+            <p>We Have Many Specials Offers Especially For You.</p>
+            <div class="get_started">
+                <a class="butn letter_Spacing" href="#">Get Started</a>
+            </div>
+       </div>
+   </div>
+ </section> 
+ <!-- end background_overlay -->
+
+
+   <!-- Login Model -->
+   <div class="modal " id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+   aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog  mt-3">
+       <div class="modal-content" >
+           <div class="modal-header">
+               <h5 class="modal-title pb-0 text-black" id="staticBackdropLabel">Login<br>
+               </h5>
+ 
+           </div>
+           <form action="../travel/handlers/user_login.php" method="post">
+               <div class="modal-body-sign px-5 py-2 ">
+                   <div class="form-group">
+                       <label for="userEmail">Email </label>
+                       <input type="email" class="form-control form-control-sm" name="userEmail" id="userEmail"
+                           aria-describedby="helpId" required="required" placeholder="">
+                   </div>
+ 
+                   <div class="form-group">
+                       <label for="userPass">Password </label>
+                       <input type="password" class="form-control form-control-sm" name="userPass" id="userPass"
+                           required="required" aria-describedby="helpId" placeholder="">
+                   </div>  
+               </div>
+               <div class="modal-footer border-0 d-flex justify-content-between pt-1">
+                   <button type="submit" class="btn btn-outline-info">Login</button>
+                   <a href="forgot-password-10.html" class="forgot-password">Forgot Password</a>
+               </div>
+ 
+               <div class="have_account">
+                   <p class="text-center">Don't have an Account?<a href="#" class="sign_up"> Sign UP</a></p>
+               </div> 
+ 
+           </form>
+       </div>
+   </div>
+ </div>
+ 
+ <!-- Regestire Model -->
+ <div class="modal" id="regestirModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+   aria-labelledby="staticBackdropLabel" aria-hidden="true" >
+   <div class="modal-dialog  mt-3">
+   <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title pb-0 text-black" id="staticBackdropLabel">create an account</h5>
+           </div>  
+              
+           <form action="../travel/handlers/user_reg.php" enctype="multipart/form-data" method="post">
+      
+               <div class="modal-body-sign px-3 py-2 ">
+                   <div class="form-group">
+                       <label for="userFirstName">Name <label class="text-danger">*</label></label>
+                       <input type="text" class="form-control form-control-sm" name="userName"
+                           id="userFirstName" aria-describedby="helpId" required="required" placeholder="Name">
+                   </div>
+ 
+                   <div class="mb-3">
+                        <label for="formFileMultiple" class="form-label">your photo </label>
+                        <input class="form-control" type="file" id="formFileMultiple" required="required" name="photo" placeholder="" multiple>
+                   </div>
+                   
+                   <div class="form-group">
+                       <label for="userEmail">Email <label class="text-danger">*</label></label>
+                       <input type="email" class="form-control form-control-sm" name="userEmail" id="userEmail"
+                           aria-describedby="helpId" required="required" placeholder="email">
+                   </div>
+ 
+                   <div class="form-group">
+                       <label for="userPass">Password <label class="text-danger">*</label></label>
+                       <input type="password" class="form-control form-control-sm" name="userPass" id="userPass"
+                           required="required" aria-describedby="helpId" placeholder="Password">
+                   </div>
+ 
+                   <div class="form-group">
+                       <label for="psw-repeat">Repeat Password <label class="text-danger">*</label></label>
+                       <input type="password" class="form-control form-control-sm" placeholder="Repeat Password"
+                           name="psw_repeat" id="psw-repeat" required>
+                   </div>
+                   <button type="submit" name="Sign" class="btn btn-outline-info mt-4 " class="Register">Sign up</button>
+ 
+               </div>
+           </form>
+ 
+       </div>
+   </div>
+ </div>
+ 
+ <!-- success Model -->
+ <div class="modal " id="successModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog  mt-3">
+       <div class="modal-content">
+       <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+           </button>
+       </div>
+           <div class="modal-body d-flex justify-content-center align-items-center">
+                   <h1>Done Success</h1>
+           </div>
+       <div class="modal-footer d-flex justify-content-between">
+           <button type="button" class="ml-auto btn btn-outline-success" data-dismiss="modal">OK</button>
+       </div>
+       </form>
+       
+       </div>
+   </div>
+ </div>
+ 
+
 <!-- start footer -->
 <footer class="mt-5">
   <section class="footer_top">
@@ -574,19 +744,17 @@
             <div class="footer_top_section col-xl">
               <h5>Newsletter</h5>
               <h6>sign up fqr special offers</h6>
-              <div class="footer_form">
+              <div class="footer_form position-relative">
                   <div class="footer_email_form">
                       <input type="email" name="email-form" class="form-control" id="exampleInputEmail1" placeholder="Email">
                   </div>
-                  <div class="text-center">
-                      <button type="submit" value="SEND NOW" class="btn">subscribe</button>
-                  </div> 
+                  <button type="submit" value="SEND NOW" class="butn py-1 px-2 position-absolute " style="top:0; right:0;">subscribe</button> 
               </div>
             </div>
           </div>
       </div>
   </section>
-
+  
 <!-- start footer section-->
   <section class="footer_bottom">
     <div class="container">
@@ -597,6 +765,8 @@
       </div>
     </div>
   </section>
+
+
 <!-- end footer section-->
 </footer>
 <!-- end footer -->
@@ -608,10 +778,15 @@
  <script src="assets/script/main.js"></script>
 <!-- bootstrap js -->
  <script src="assets/script/bootstrap.bundle.min.js"></script>
+
+ 
+ <script>
+   $('.loginBtn').click(function(){
+       $('#loginModal').modal('show'); 
+   });
+   $('.registerBtn').click(function(){
+       $('#regestirModal').modal('show'); 
+   });
+</script>
 </body>
 </html>
-
-
-
-
-
